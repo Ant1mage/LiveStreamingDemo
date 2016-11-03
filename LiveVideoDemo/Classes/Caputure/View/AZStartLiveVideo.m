@@ -13,16 +13,16 @@
 #import "Masonry.h"
 @interface AZStartLiveVideo () <LFLiveSessionDelegate>
 
-//美颜
+// 美颜
 @property (nonatomic, strong) UIButton *beautyButton;
 
-//切换前后摄像头
+// 切换前后摄像头
 @property (nonatomic, strong) UIButton *cameraButton;
 
-//关闭
+// 关闭
 @property (nonatomic, strong) UIButton *closeButton;
 
-//开始直播
+// 开始直播
 @property (nonatomic, strong) UIButton *startLiveButton;
 
 @property (nonatomic, strong) UIView *containerView;
@@ -40,13 +40,13 @@ static int margin = 20;
 -(instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         
-        //加载视频录制
+        // 加载视频录制
         [self requestAccessForVideo];
         
-        //加载音频录制
+        // 加载音频录制
         [self requestAccessForAudio];
         
-        //创建容器
+        // 创建容器
         [self addSubview:self.containerView];
         
         [self setupUI];
@@ -190,7 +190,7 @@ static int margin = 20;
 
 
 #pragma mark -- 开始直播
-//调用LF的API开始录制
+// 调用LF的API开始录制
 - (UIButton*)startLiveButton{
     if(!_startLiveButton){
         _startLiveButton = [[UIButton alloc]init];
@@ -222,14 +222,14 @@ static int margin = 20;
 - (void)setupUI {
     
     
-    //添加按钮
+    // 添加按钮
     [self.containerView addSubview:self.closeButton];
     [self.containerView addSubview:self.cameraButton];
     [self.containerView addSubview:self.beautyButton];
     [self.containerView addSubview:self.startLiveButton];
     
     
-    //布局
+    // 布局
     [_closeButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.and.bottom.mas_equalTo(-margin);
     }];
@@ -253,7 +253,5 @@ static int margin = 20;
     
     
 }
-
-
 
 @end
