@@ -4,7 +4,7 @@
 ### 最低支持: iOS 7
 -------------------------<br>
 本项目基于LFLiveKit(https://github.com/LaiFengiOS/LFLiveKit)<br>
-实现手机端采集,美颜,编码,推流,解码,拉流等功能<br>
+实现手机端采集,美颜,编码,推流,拉流,解码,播放功能<br>
 播放端采用bilibili开源框架ijkplayer(https://github.com/Bilibili/ijkplayer)<br>
 流媒体服务器用的自己搭建的nginx服务器,不会的同学详情请见(http://www.jianshu.com/p/c594c3d1167c)<br>
 -------------------------<br>
