@@ -1,7 +1,8 @@
 # LiveStreamingDemo
 ## 手机端直播Demo 修复iOS10所需权限报错的问题
 ### 运行环境: Xcode8.0 & iOS 10
-### 最低支持: iOS 7
+### 最低支持: Xcode7.3 & iOS 7
+### 直播功能请真机测试
 -------------------------<br>
 本项目基于LFLiveKit(https://github.com/LaiFengiOS/LFLiveKit)<br>
 实现手机端采集,美颜,编码,推流,拉流,解码,播放功能<br>
