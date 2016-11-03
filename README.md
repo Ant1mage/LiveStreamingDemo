@@ -7,7 +7,7 @@
 流媒体服务器用的自己搭建的nginx服务器,不会的同学详情请见(http://www.jianshu.com/p/c594c3d1167c)<br>
 -------------------------<br>
 运行前注意事项:<br>
-#### 1.项目不自带ijkplayer freamwork,请自己下载并将ijkplayer打包制作成freamwork导入该项目根目录,不会的同学请看(http://www.cnblogs.com/wanghuaijun/p/5502216.html)<br>
+#### 1.项目不自带ijkplayer freamwork,请自己下载并将ijkplayer打包制作成freamwork导入该项目根目录(与workspace文件同一路径下),不会的同学请看(http://www.cnblogs.com/wanghuaijun/p/5502216.html)<br>
 #### 2.推流URL在项目Classes->Caputure->View->AZStratLiveVideo.m文件中,212行代码,可自行修改rtmp url,用vlc播放器播放
 
 
