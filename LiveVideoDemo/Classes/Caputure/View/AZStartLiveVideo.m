@@ -160,8 +160,7 @@ static int margin = 20;
 
 - (UIButton*)cameraButton{
     if(!_cameraButton){
-        _cameraButton = [UIButton new];
-        
+        _cameraButton = [[UIButton alloc]init];
         [_cameraButton setImage:[UIImage imageNamed:@"camra_preview"] forState:UIControlStateNormal];
         _cameraButton.exclusiveTouch = YES;
         __weak typeof(self) _self = self;
@@ -175,8 +174,7 @@ static int margin = 20;
 
 - (UIButton*)beautyButton{
     if(!_beautyButton){
-        _beautyButton = [UIButton new];
-        
+        _beautyButton = [[UIButton alloc]init];
         [_beautyButton setImage:[UIImage imageNamed:@"camra_beauty"] forState:UIControlStateSelected];
         [_beautyButton setImage:[UIImage imageNamed:@"camra_beauty_close"] forState:UIControlStateNormal];
         _beautyButton.exclusiveTouch = YES;
@@ -195,8 +193,7 @@ static int margin = 20;
 //调用LF的API开始录制
 - (UIButton*)startLiveButton{
     if(!_startLiveButton){
-        
-        _startLiveButton = [UIButton new];
+        _startLiveButton = [[UIButton alloc]init];
         _startLiveButton.layer.cornerRadius = _startLiveButton.frame.size.height * 0.5;
         [_startLiveButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_startLiveButton.titleLabel setFont:[UIFont systemFontOfSize:16]];
@@ -220,6 +217,8 @@ static int margin = 20;
     return _startLiveButton;
 }
 
+
+#pragma mark -- 添加ui
 - (void)setupUI {
     
     
